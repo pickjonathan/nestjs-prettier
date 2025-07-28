@@ -11,10 +11,14 @@ export interface User {
 export class UsersService {
   private users: User[] = [];
   private idCounter = 1;
+  private unused_property = 'test'; // unused property
 
   create(createUserDto: CreateUserDto): User {
+    const temp_id = this.idCounter++; // prefer const
+    const unused_const = 'not used'; // unused variable
+
     const newUser: User = {
-      id: this.idCounter++,
+      id: temp_id,
       ...createUserDto,
     };
     this.users.push(newUser);
@@ -22,10 +26,20 @@ export class UsersService {
   }
 
   findAll(): User[] {
-    return this.users;
+    const temp: any = this.users; // no-explicit-any
+    return temp;
   }
 
   findOne(id: number): User | undefined {
-    return this.users.find(user => user.id === id);
+    // Inefficient code that will trigger warnings
+    let result: any = null; // no-explicit-any + prefer-const
+    for (let i = 0; i < this.users.length; i++) {
+      if (this.users[i].id == id) {
+        // prefer === over ==
+        result = this.users[i];
+        break;
+      }
+    }
+    return result;
   }
 }
