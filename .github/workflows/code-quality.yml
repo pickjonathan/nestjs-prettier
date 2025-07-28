@@ -31,7 +31,9 @@ jobs:
         run: npm run format:check
 
       - name: Run ESLint
-        run: npm run lint
+        run: |
+          echo "🔍 Running ESLint checks..."
+          npm run lint || (echo "❌ ESLint found issues. Check the annotations above for details." && exit 1)
 
       - name: Run tests
         run: npm test
