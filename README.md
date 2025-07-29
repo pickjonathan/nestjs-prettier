@@ -73,11 +73,29 @@ The pipeline performs:
 
 ### Configuration Files
 
-- `.prettierrc`: Prettier formatting rules
+- `.prettierrc.json`: Prettier formatting rules (2025 best practices)
 - `.prettierignore`: Files to exclude from formatting
 - `eslint.config.mjs`: ESLint configuration with Prettier integration
 - `.husky/pre-commit`: Pre-commit hook configuration
 - `package.json`: lint-staged configuration
+- `.vscode/`: VS Code workspace settings for optimal development
+
+### IDE Setup
+
+For the best development experience, configure your IDE for automatic formatting and live error detection:
+
+**📖 [Complete IDE Setup Guide](./IDE_SETUP.md)**
+
+Includes detailed instructions for:
+- **VS Code**: Extensions, settings, and workspace configuration
+- **WebStorm/IntelliJ**: Built-in tools and file watchers setup
+- **Live error detection** and auto-formatting on save
+- **Troubleshooting** common configuration issues
+
+### Additional Documentation
+
+- **[Prettier Configuration Guide](./PRETTIER_CONFIG.md)** - Detailed explanation of formatting rules
+- **[IDE Setup Guide](./IDE_SETUP.md)** - VS Code and WebStorm configuration
 
 ## Project setup
 
