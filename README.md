@@ -80,22 +80,19 @@ The pipeline performs:
 - `package.json`: lint-staged configuration
 - `.vscode/`: VS Code workspace settings for optimal development
 
-### IDE Setup
+## 📖 Complete Development Guide
 
-For the best development experience, configure your IDE for automatic formatting and live error detection:
+For detailed setup instructions, configuration explanations, and troubleshooting:
 
-**📖 [Complete IDE Setup Guide](./IDE_SETUP.md)**
+**🚀 [DEVELOPMENT_GUIDE.md](./DEVELOPMENT_GUIDE.md)**
 
-Includes detailed instructions for:
-- **VS Code**: Extensions, settings, and workspace configuration
-- **WebStorm/IntelliJ**: Built-in tools and file watchers setup
-- **Live error detection** and auto-formatting on save
-- **Troubleshooting** common configuration issues
-
-### Additional Documentation
-
-- **[Prettier Configuration Guide](./PRETTIER_CONFIG.md)** - Detailed explanation of formatting rules
-- **[IDE Setup Guide](./IDE_SETUP.md)** - VS Code and WebStorm configuration
+This comprehensive guide includes:
+- **Prettier Configuration** - All formatting rules explained with examples
+- **IDE Setup** - Complete VS Code and WebStorm configuration
+- **Troubleshooting** - Solutions for common issues
+- **Verification Steps** - How to test your setup
+- **Scripts & Commands** - All available npm commands
+- **CI/CD Pipeline** - GitHub Actions workflow explanation
 
 ## Project setup
 
